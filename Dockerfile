@@ -2,7 +2,7 @@ FROM alpine:latest
 
 LABEL maintainer="contact@ahmedaminemejri.com"
 
-RUN apk --update add bind \
+RUN apk add --update bind \
 && rm -rf /var/cache/apk/*
 
 EXPOSE 53
